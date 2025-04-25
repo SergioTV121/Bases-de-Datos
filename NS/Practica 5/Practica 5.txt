@@ -1,0 +1,99 @@
+Productor Básico
+----------------
+Nombre
+Producción media
+Producción máxima
+Fecha de entrada de funcionamiento
+
+	Hidroeléctrico
+	----------------
+	ocupación
+	cantidad máxima
+	numero de turbinas
+	
+	Solar
+	----------------
+	superficie total de los paneles
+	media anual de horas de sol
+	tipo de celda solar
+	
+	Nuclear
+	----------------
+	numero de reactores
+	volumen de plutonio consumido
+	residuos nucleares producidos
+	
+	Termica
+	----------------
+	numero de hornos que posee
+	volumen de carbón consumido
+	volumen de emisión de gases.
+	
+Suministrador de plutonio
+----------------
+nombre 
+país
+
+Transportista
+----------------
+nombre 
+matrícula
+
+Planta nuclear
+----------------
+porte de compra
+ubicación
+
+Estaciones primarias
+----------------
+Reciben energía
+nombre
+numero de transformadores de baja a alta tensión
+redes de distribución
+
+	redes de distribución
+	----------------
+	numero de red
+	cabecera: estación primaria id
+	propiedad: compañias dueñas
+	lineas
+	
+		Lineas
+		----------------
+		ID
+		Numero secuencial
+		numero de red
+		longiud
+		
+			Subestación
+			----------------
+			Nombre
+			ID
+			linea abastecedora
+			provincias
+			
+				Provincias
+				----------------
+				ID
+				zonas de servicio
+				nombre 
+				codigo
+					
+					Zona de servicio
+					----------------
+					ID
+					subestación que la atiende
+					Consumo medio
+					Numero de consumidores finales
+					numero de particulares
+					numero de empresas e instituciones
+					
+	
+Compañía
+----------------
+nombre
+redes de distribución
+
+
+	
+	
