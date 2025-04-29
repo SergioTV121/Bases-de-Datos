@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.21.1214.2057                               -->
+<workbook original-version='18.1' source-build='2021.4.1 (20214.21.1214.2057)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='consulta_3 (incidentes)' inline='true' name='federated.0u669bd0fpz2l614zhjmd071krkj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1imm07n1v0mzie1g7wi5w0anync3'>
+            <connection class='mysql' dbname='incidentes' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.1imm07n1v0mzie1g7wi5w0anync3' name='consulta_3' table='[consulta_3]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.1imm07n1v0mzie1g7wi5w0anync3' name='consulta_3' table='[consulta_3]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>dia_semana</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dia_semana]</local-name>
+            <parent-name>[consulta_3]</parent-name>
+            <remote-alias>dia_semana</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16383</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[consulta_3_9A3D42442EF84C8D8F3AD6E6040FCE27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cantidad</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cantidad]</local-name>
+            <parent-name>[consulta_3]</parent-name>
+            <remote-alias>cantidad</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[consulta_3_9A3D42442EF84C8D8F3AD6E6040FCE27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='consulta_3' datatype='table' name='[__tableau_internal_object_id__].[consulta_3_9A3D42442EF84C8D8F3AD6E6040FCE27]' role='measure' type='quantitative' />
+      <column caption='Cantidad' datatype='integer' name='[cantidad]' role='measure' type='quantitative' />
+      <column caption='Dia Semana' datatype='string' name='[dia_semana]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='consulta_3' id='consulta_3_9A3D42442EF84C8D8F3AD6E6040FCE27'>
+            <properties context=''>
+              <relation connection='mysql.1imm07n1v0mzie1g7wi5w0anync3' name='consulta_3' table='[consulta_3]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Dia con mas incidentes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consulta_3 (incidentes)' name='federated.0u669bd0fpz2l614zhjmd071krkj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0u669bd0fpz2l614zhjmd071krkj'>
+            <column caption='Cantidad' datatype='integer' name='[cantidad]' role='measure' type='quantitative' />
+            <column caption='Dia Semana' datatype='string' name='[dia_semana]' role='dimension' type='nominal' />
+            <column-instance column='[dia_semana]' derivation='None' name='[none:dia_semana:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cantidad]' derivation='Sum' name='[sum:cantidad:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0u669bd0fpz2l614zhjmd071krkj].[sum:cantidad:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0u669bd0fpz2l614zhjmd071krkj].[none:dia_semana:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0u669bd0fpz2l614zhjmd071krkj].[sum:cantidad:qk]</rows>
+        <cols>[federated.0u669bd0fpz2l614zhjmd071krkj].[none:dia_semana:nk]</cols>
+      </table>
+      <simple-id uuid='{9539D7B9-CB71-4993-977A-060EC2FC1132}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Dia con mas incidentes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0u669bd0fpz2l614zhjmd071krkj].[none:dia_semana:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0u669bd0fpz2l614zhjmd071krkj].[none:dia_semana:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F33E9DA3-3E65-4FA6-AC3A-05D2611C4E47}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dia con mas incidentes' width='192'>
+      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
+      AQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

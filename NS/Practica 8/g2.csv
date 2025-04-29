@@ -1,0 +1,46 @@
+mes,incidente_c4,frecuencia
+11,"accidente-choque sin lesionados",287
+11,"accidente-choque con lesionados",136
+11,lesionado-atropellado,60
+11,accidente-motociclista,38
+11,accidente-volcadura,9
+11,accidente-ciclista,6
+11,"accidente-persona atrapada / desbarrancada",4
+11,"accidente-vehículo atrapado-varado",3
+11,"mi ciudad-calle-incidente de tránsito",2
+11,"detención ciudadana-accidente automovilístico",1
+11,"detención ciudadana-atropellado",1
+11,"sismo-choque con lesionados",1
+11,cadáver-atropellado,1
+10,"accidente-choque sin lesionados",1314
+10,"accidente-choque con lesionados",746
+10,lesionado-atropellado,307
+10,accidente-motociclista,219
+10,accidente-volcadura,63
+10,accidente-ciclista,49
+10,"accidente-persona atrapada / desbarrancada",12
+10,"accidente-choque con prensados",8
+10,cadáver-atropellado,7
+10,"mi ciudad-calle-incidente de tránsito",6
+10,"cadáver-accidente automovilístico",5
+10,"sismo-choque con lesionados",4
+10,"accidente-vehículo atrapado-varado",3
+10,"detención ciudadana-atropellado",2
+10,"detención ciudadana-accidente automovilístico",1
+10,"mi ciudad-taxi-incidente de tránsito",1
+9,"accidente-choque sin lesionados",1507
+9,"accidente-choque con lesionados",879
+9,lesionado-atropellado,349
+9,accidente-motociclista,348
+9,accidente-volcadura,103
+9,accidente-ciclista,46
+9,"accidente-vehículo atrapado-varado",15
+9,"accidente-persona atrapada / desbarrancada",12
+9,"accidente-choque con prensados",10
+9,accidente-otros,6
+9,cadáver-atropellado,5
+9,"cadáver-accidente automovilístico",3
+9,"accidente-vehiculo desbarrancado",3
+9,"sismo-choque con lesionados",2
+9,"detención ciudadana-accidente automovilístico",2
+9,"sismo-persona atropellada",1
